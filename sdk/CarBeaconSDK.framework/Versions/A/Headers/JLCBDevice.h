@@ -26,7 +26,6 @@
 //
 
 #import "JLCBData.h"
-#import "JLCBFirmware.h"
 
 @class JLCBDevice;
 
@@ -137,39 +136,5 @@
  * read device info
  */
 -(void)readDeviceInfo:(JLCBDeviceInfoHandler) handler;
-@end
-
-////////////////////////////////////////////////////////////////////////////////////////
-/*
- * CarBeacon Device firmware operations
- */
-@interface JLCBDevice(JLCBFirmware)
-
-/*
- * check whether device supports firmware update.
- */
--(BOOL)canUpdateFirmware;
-
-/*
- * update firmware
- */
-- (void)updateFirmwareWithImageData:(NSData*)data
-                        forceUpdate:(BOOL)forceUpdate
-                         fastUpdate:(BOOL)fastUpdate
-                  completionHandler:(JLCBFirmwareUpdateCompletionHandler)completionHandler
-                    progressHandler:(JLCBFirmwareUpdateProgressHandler)progressHandler;
-
-/*
- * Check firmware update
- * @discussion the callback will be called with an object of JLCBFirmwareReleaseInfo or null if no updates
- */
--(void)checkFirmwareRelease:(JLCBFirmwareReleaseInfoHandler)completionHandler;
-
-/*
- * Download the firmware release
- */
--(void)downloadFirmwareRelease:(JLCBFirmwareReleaseInfo*)release
-             completionHandler:(JLCBFirmwareDownloadCompletionHandler)completionHandler
-               progressHandler:(JLCBFirmwareDownloadProgressHandler)progressHandler;
 @end
 

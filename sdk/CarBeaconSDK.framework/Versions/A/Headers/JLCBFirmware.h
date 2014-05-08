@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
+#import "JLCBDevice.h"
 
 //////////////////////////////////////////////////////////////////////////
 /*
@@ -39,3 +40,37 @@ typedef void (^JLCBFirmwareDownloadCompletionHandler)(NSData *data, NSError *err
 typedef void (^JLCBFirmwareUpdateProgressHandler)(int bytesSent, int bytesTotal);
 typedef void (^JLCBFirmwareUpdateCompletionHandler)(id data, NSError *error);
 
+
+////////////////////////////////////////////////////////////////////////////////////////
+/*
+ * CarBeacon Device firmware operations
+ */
+@interface JLCBDevice(JLCBFirmware)
+
+/*
+ * check whether device supports firmware update.
+ */
+-(BOOL)canUpdateFirmware;
+
+/*
+ * update firmware
+ */
+- (void)updateFirmwareWithImageData:(NSData*)data
+                        forceUpdate:(BOOL)forceUpdate
+                         fastUpdate:(BOOL)fastUpdate
+                  completionHandler:(JLCBFirmwareUpdateCompletionHandler)completionHandler
+                    progressHandler:(JLCBFirmwareUpdateProgressHandler)progressHandler;
+
+/*
+ * Check firmware update
+ * @discussion the callback will be called with an object of JLCBFirmwareReleaseInfo or null if no updates
+ */
+-(void)checkFirmwareRelease:(JLCBFirmwareReleaseInfoHandler)completionHandler;
+
+/*
+ * Download the firmware release
+ */
+-(void)downloadFirmwareRelease:(JLCBFirmwareReleaseInfo*)release
+             completionHandler:(JLCBFirmwareDownloadCompletionHandler)completionHandler
+               progressHandler:(JLCBFirmwareDownloadProgressHandler)progressHandler;
+@end

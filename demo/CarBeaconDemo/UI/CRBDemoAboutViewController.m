@@ -9,6 +9,7 @@
 #import "CRBDemoAboutViewController.h"
 
 #import <CarBeaconSDK/JLCarBeaconSDK.h>
+#import <CarBeaconSDK/JLCBFirmware.h>
 
 #import "MBProgressHUD.h"
 
