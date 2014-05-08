@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		290499E4191BAC6200EFF654 /* CarBeaconSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290499E3191BAC6200EFF654 /* CarBeaconSDK.framework */; };
+		2946400A18D0141100BC4F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2946400918D0141100BC4F55 /* UIKit.framework */; };
+		2946400C18D0141100BC4F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2946400B18D0141100BC4F55 /* Foundation.framework */; };
+		2946400E18D0141100BC4F55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2946400D18D0141100BC4F55 /* CoreGraphics.framework */; };
+		2946401418D0141100BC4F55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2946401218D0141100BC4F55 /* InfoPlist.strings */; };
+		2946401618D0141100BC4F55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2946401518D0141100BC4F55 /* main.m */; };
+		2946401A18D0141100BC4F55 /* CRBDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2946401918D0141100BC4F55 /* CRBDemoAppDelegate.m */; };
+		2946401C18D0141100BC4F55 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2946401B18D0141100BC4F55 /* Default.png */; };
+		2946401E18D0141100BC4F55 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2946401D18D0141100BC4F55 /* Default@2x.png */; };
+		2946402018D0141100BC4F55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2946401F18D0141100BC4F55 /* Default-568h@2x.png */; };
+		2946402918D0144E00BC4F55 /* CRBDemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2946402718D0144E00BC4F55 /* CRBDemoMainViewController.m */; };
+		2946402A18D0144E00BC4F55 /* CRBDemoMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2946402818D0144E00BC4F55 /* CRBDemoMainViewController.xib */; };
+		2946403518D0152800BC4F55 /* GaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2946403318D0152800BC4F55 /* GaugeView.m */; };
+		2946403718D0153B00BC4F55 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2946403618D0153B00BC4F55 /* CoreBluetooth.framework */; };
+		2946403918D0155500BC4F55 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2946403818D0155500BC4F55 /* QuartzCore.framework */; };
+		2946403B18D0155A00BC4F55 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2946403A18D0155A00BC4F55 /* CoreLocation.framework */; };
+		2946403E18D0159700BC4F55 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2946403C18D0159700BC4F55 /* MBProgressHUD.m */; };
+		297A154A18D31F0F00E6BECA /* CRBDemoAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297A154918D31F0F00E6BECA /* CRBDemoAboutViewController.xib */; };
+		298085A718D043B1005C4593 /* CRBDemoMainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298085A618D043B1005C4593 /* CRBDemoMainViewController_iPad.xib */; };
+		298DB27C190A650C004ED940 /* CRBDemoScanViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298DB27B190A650C004ED940 /* CRBDemoScanViewController_iPad.xib */; };
+		298E4A57190A0DF0003080EC /* CRBDemoScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4A55190A0DF0003080EC /* CRBDemoScanViewController.m */; };
+		298E4A58190A0DF0003080EC /* CRBDemoScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298E4A56190A0DF0003080EC /* CRBDemoScanViewController.xib */; };
+		29C93B6118D3145B009C2561 /* CRBDemoAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C93B5F18D3145B009C2561 /* CRBDemoAboutViewController.m */; };
+		29C93B6218D3145B009C2561 /* CRBDemoAboutViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C93B6018D3145B009C2561 /* CRBDemoAboutViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		290499E3191BAC6200EFF654 /* CarBeaconSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarBeaconSDK.framework; path = ../sdk/CarBeaconSDK.framework; sourceTree = "<group>"; };
+		2946400618D0141100BC4F55 /* CarBeaconDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBeaconDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2946400918D0141100BC4F55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2946400B18D0141100BC4F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2946400D18D0141100BC4F55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2946401118D0141100BC4F55 /* CarBeaconDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarBeaconDemo-Info.plist"; sourceTree = "<group>"; };
+		2946401318D0141100BC4F55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2946401518D0141100BC4F55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2946401718D0141100BC4F55 /* CarBeaconDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarBeaconDemo-Prefix.pch"; sourceTree = "<group>"; };
+		2946401818D0141100BC4F55 /* CRBDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRBDemoAppDelegate.h; sourceTree = "<group>"; };
+		2946401918D0141100BC4F55 /* CRBDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRBDemoAppDelegate.m; sourceTree = "<group>"; };
+		2946401B18D0141100BC4F55 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2946401D18D0141100BC4F55 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2946401F18D0141100BC4F55 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2946402618D0144E00BC4F55 /* CRBDemoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRBDemoMainViewController.h; path = UI/CRBDemoMainViewController.h; sourceTree = "<group>"; };
+		2946402718D0144E00BC4F55 /* CRBDemoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRBDemoMainViewController.m; path = UI/CRBDemoMainViewController.m; sourceTree = "<group>"; };
+		2946402818D0144E00BC4F55 /* CRBDemoMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CRBDemoMainViewController.xib; path = UI/CRBDemoMainViewController.xib; sourceTree = "<group>"; };
+		2946403318D0152800BC4F55 /* GaugeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GaugeView.m; path = UI/GaugeView.m; sourceTree = "<group>"; };
+		2946403418D0152800BC4F55 /* GaugeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GaugeView.h; path = UI/GaugeView.h; sourceTree = "<group>"; };
+		2946403618D0153B00BC4F55 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		2946403818D0155500BC4F55 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2946403A18D0155A00BC4F55 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2946403C18D0159700BC4F55 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = UI/MBProgressHUD.m; sourceTree = "<group>"; };
+		2946403D18D0159700BC4F55 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = UI/MBProgressHUD.h; sourceTree = "<group>"; };
+		297A154918D31F0F00E6BECA /* CRBDemoAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CRBDemoAboutViewController.xib; path = UI/CRBDemoAboutViewController.xib; sourceTree = "<group>"; };
+		298085A618D043B1005C4593 /* CRBDemoMainViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRBDemoMainViewController_iPad.xib; sourceTree = "<group>"; };
+		298DB27B190A650C004ED940 /* CRBDemoScanViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CRBDemoScanViewController_iPad.xib; path = UI/CRBDemoScanViewController_iPad.xib; sourceTree = "<group>"; };
+		298E4A54190A0DF0003080EC /* CRBDemoScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRBDemoScanViewController.h; path = UI/CRBDemoScanViewController.h; sourceTree = "<group>"; };
+		298E4A55190A0DF0003080EC /* CRBDemoScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRBDemoScanViewController.m; path = UI/CRBDemoScanViewController.m; sourceTree = "<group>"; };
+		298E4A56190A0DF0003080EC /* CRBDemoScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CRBDemoScanViewController.xib; path = UI/CRBDemoScanViewController.xib; sourceTree = "<group>"; };
+		29C93B5E18D3145B009C2561 /* CRBDemoAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRBDemoAboutViewController.h; path = UI/CRBDemoAboutViewController.h; sourceTree = "<group>"; };
+		29C93B5F18D3145B009C2561 /* CRBDemoAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRBDemoAboutViewController.m; path = UI/CRBDemoAboutViewController.m; sourceTree = "<group>"; };
+		29C93B6018D3145B009C2561 /* CRBDemoAboutViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CRBDemoAboutViewController_iPad.xib; path = UI/CRBDemoAboutViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2946400318D0141100BC4F55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2946403B18D0155A00BC4F55 /* CoreLocation.framework in Frameworks */,
+				2946403918D0155500BC4F55 /* QuartzCore.framework in Frameworks */,
+				2946403718D0153B00BC4F55 /* CoreBluetooth.framework in Frameworks */,
+				2946400A18D0141100BC4F55 /* UIKit.framework in Frameworks */,
+				2946400C18D0141100BC4F55 /* Foundation.framework in Frameworks */,
+				2946400E18D0141100BC4F55 /* CoreGraphics.framework in Frameworks */,
+				290499E4191BAC6200EFF654 /* CarBeaconSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29463FFD18D0141100BC4F55 = {
+			isa = PBXGroup;
+			children = (
+				2946400F18D0141100BC4F55 /* CarBeaconDemo */,
+				2946400818D0141100BC4F55 /* Frameworks */,
+				2946400718D0141100BC4F55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2946400718D0141100BC4F55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2946400618D0141100BC4F55 /* CarBeaconDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2946400818D0141100BC4F55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				290499E3191BAC6200EFF654 /* CarBeaconSDK.framework */,
+				2946403A18D0155A00BC4F55 /* CoreLocation.framework */,
+				2946403818D0155500BC4F55 /* QuartzCore.framework */,
+				2946403618D0153B00BC4F55 /* CoreBluetooth.framework */,
+				2946400918D0141100BC4F55 /* UIKit.framework */,
+				2946400B18D0141100BC4F55 /* Foundation.framework */,
+				2946400D18D0141100BC4F55 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2946400F18D0141100BC4F55 /* CarBeaconDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2946402B18D014EA00BC4F55 /* UI */,
+				2946401818D0141100BC4F55 /* CRBDemoAppDelegate.h */,
+				2946401918D0141100BC4F55 /* CRBDemoAppDelegate.m */,
+				2946401018D0141100BC4F55 /* Supporting Files */,
+			);
+			path = CarBeaconDemo;
+			sourceTree = "<group>";
+		};
+		2946401018D0141100BC4F55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2946401118D0141100BC4F55 /* CarBeaconDemo-Info.plist */,
+				2946401218D0141100BC4F55 /* InfoPlist.strings */,
+				2946401518D0141100BC4F55 /* main.m */,
+				2946401718D0141100BC4F55 /* CarBeaconDemo-Prefix.pch */,
+				2946401B18D0141100BC4F55 /* Default.png */,
+				2946401D18D0141100BC4F55 /* Default@2x.png */,
+				2946401F18D0141100BC4F55 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2946402B18D014EA00BC4F55 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2946403C18D0159700BC4F55 /* MBProgressHUD.m */,
+				2946403D18D0159700BC4F55 /* MBProgressHUD.h */,
+				2946403318D0152800BC4F55 /* GaugeView.m */,
+				2946403418D0152800BC4F55 /* GaugeView.h */,
+				2946402618D0144E00BC4F55 /* CRBDemoMainViewController.h */,
+				2946402718D0144E00BC4F55 /* CRBDemoMainViewController.m */,
+				2946402818D0144E00BC4F55 /* CRBDemoMainViewController.xib */,
+				298085A618D043B1005C4593 /* CRBDemoMainViewController_iPad.xib */,
+				29C93B5E18D3145B009C2561 /* CRBDemoAboutViewController.h */,
+				29C93B5F18D3145B009C2561 /* CRBDemoAboutViewController.m */,
+				297A154918D31F0F00E6BECA /* CRBDemoAboutViewController.xib */,
+				29C93B6018D3145B009C2561 /* CRBDemoAboutViewController_iPad.xib */,
+				298E4A54190A0DF0003080EC /* CRBDemoScanViewController.h */,
+				298E4A55190A0DF0003080EC /* CRBDemoScanViewController.m */,
+				298E4A56190A0DF0003080EC /* CRBDemoScanViewController.xib */,
+				298DB27B190A650C004ED940 /* CRBDemoScanViewController_iPad.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2946400518D0141100BC4F55 /* CarBeaconDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2946402318D0141100BC4F55 /* Build configuration list for PBXNativeTarget "CarBeaconDemo" */;
+			buildPhases = (
+				2946400218D0141100BC4F55 /* Sources */,
+				2946400318D0141100BC4F55 /* Frameworks */,
+				2946400418D0141100BC4F55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarBeaconDemo;
+			productName = CarBeaconDemo;
+			productReference = 2946400618D0141100BC4F55 /* CarBeaconDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29463FFE18D0141100BC4F55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CRBDemo;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = JoyLabs;
+			};
+			buildConfigurationList = 2946400118D0141100BC4F55 /* Build configuration list for PBXProject "CarBeaconDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29463FFD18D0141100BC4F55;
+			productRefGroup = 2946400718D0141100BC4F55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2946400518D0141100BC4F55 /* CarBeaconDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2946400418D0141100BC4F55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2946401418D0141100BC4F55 /* InfoPlist.strings in Resources */,
+				2946401C18D0141100BC4F55 /* Default.png in Resources */,
+				2946401E18D0141100BC4F55 /* Default@2x.png in Resources */,
+				2946402018D0141100BC4F55 /* Default-568h@2x.png in Resources */,
+				298DB27C190A650C004ED940 /* CRBDemoScanViewController_iPad.xib in Resources */,
+				2946402A18D0144E00BC4F55 /* CRBDemoMainViewController.xib in Resources */,
+				298E4A58190A0DF0003080EC /* CRBDemoScanViewController.xib in Resources */,
+				298085A718D043B1005C4593 /* CRBDemoMainViewController_iPad.xib in Resources */,
+				29C93B6218D3145B009C2561 /* CRBDemoAboutViewController_iPad.xib in Resources */,
+				297A154A18D31F0F00E6BECA /* CRBDemoAboutViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2946400218D0141100BC4F55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2946401618D0141100BC4F55 /* main.m in Sources */,
+				2946401A18D0141100BC4F55 /* CRBDemoAppDelegate.m in Sources */,
+				298E4A57190A0DF0003080EC /* CRBDemoScanViewController.m in Sources */,
+				2946402918D0144E00BC4F55 /* CRBDemoMainViewController.m in Sources */,
+				2946403518D0152800BC4F55 /* GaugeView.m in Sources */,
+				2946403E18D0159700BC4F55 /* MBProgressHUD.m in Sources */,
+				29C93B6118D3145B009C2561 /* CRBDemoAboutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2946401218D0141100BC4F55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2946401318D0141100BC4F55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2946402118D0141100BC4F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../sdk/CarBeaconSDK/Headers";
+			};
+			name = Debug;
+		};
+		2946402218D0141100BC4F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../sdk/CarBeaconSDK/Headers";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2946402418D0141100BC4F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../sdk",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarBeaconDemo/CarBeaconDemo-Prefix.pch";
+				INFOPLIST_FILE = "CarBeaconDemo/CarBeaconDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../sdk/CarBeaconSDK/Headers";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2946402518D0141100BC4F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../sdk",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarBeaconDemo/CarBeaconDemo-Prefix.pch";
+				INFOPLIST_FILE = "CarBeaconDemo/CarBeaconDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../sdk/CarBeaconSDK/Headers";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2946400118D0141100BC4F55 /* Build configuration list for PBXProject "CarBeaconDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2946402118D0141100BC4F55 /* Debug */,
+				2946402218D0141100BC4F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2946402318D0141100BC4F55 /* Build configuration list for PBXNativeTarget "CarBeaconDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2946402418D0141100BC4F55 /* Debug */,
+				2946402518D0141100BC4F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29463FFE18D0141100BC4F55 /* Project object */;
+}
