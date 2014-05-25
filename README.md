@@ -1,7 +1,7 @@
 The iOS SDK for CarBeacon
 ==================
 
-The iOS SDK provides APIs for iOS developers to read OBD info from your car with our CarOBD hardware. 
+This SDK provides APIs for iOS developers to read OBD info from your car with out CarOBD hardware. 
 
 With the SDK you can:
 
